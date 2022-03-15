@@ -1,20 +1,13 @@
-#include "main.h"
+#include <unistd.h>
+
 /**
- * main - entry block
- * Description: prints holberton on new line
- * Return: 0
+ * _putchar - writes the character c to stdout
+ * @c: the character to print
+ *
+ * Return: On success 1.
+ * On errot, -1 is return, and errno is set appropriately.
  */
-int main(void)
+int _putchar(char c)
 {
-	char c[9] = "_putchar";
-
-	int i = 0;
-
-	while (i < 9)
-	{
-		'_putchar(c[i])';
-		i++;
-	}
-	_putchar('\n');
-	return (0);
+	return (write(1, &c, 1));
 }
